@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `${body.daily.data[0].summary} It is currently ${body.currently.temperature} degrees out. There is ${body.currently.precipProbability} chance of rain.`
+        `${body.daily.data[0].summary} It is currently ${body.currently.temperature} celsius.\nFeels like ${body.currently.apparentTemperature} celsius. There is ${body.currently.precipProbability} chance of rain.\nAtmospheric pressure is ${body.currently.pressure}psi`
       );
     }
   });
