@@ -37,7 +37,8 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
   res.render('help', {
     title: 'Help',
-    help_message: "SOS! We need help ASAP! We're in the enemy galaxy!",
+    help_message:
+      'You can ask for help and anything you are interested in at benjamin.brkic@gmail.com',
     name: 'Benjamin Brkic'
   });
 });
